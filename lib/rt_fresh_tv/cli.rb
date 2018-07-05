@@ -4,6 +4,8 @@ class RtFreshTv::CLI
 	def call
 		welcome
 		list_shows
+		menu
+		goodbye
 	end
 
 	def welcome
@@ -19,5 +21,23 @@ class RtFreshTv::CLI
 		puts "4. Pose: Season 1. 96% Fresh"
 	end
 
+	def menu
+		input = nil
+		while input != "exit"
+			puts "Please type the number of the show you would like more information about. You can also type 'list' for the list of shows or 'exit'."
+			input = gets.strip.downcase
+			if input.to_i == 1
+				puts "More information about show 1"
+			elsif input == "list"
+				list_shows
+			else
+				puts "I did not understand your input. Please choose a show or type 'list' to see the shows"
+			end
+		end
+	end
 
+	def goodbye
+		puts "Thank you for using Rotten Tomatoes' Fresh TV!"
+	end
+	
 end
