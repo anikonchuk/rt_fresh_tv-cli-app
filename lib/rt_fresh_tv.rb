@@ -1,5 +1,2 @@
-require "rt_fresh_tv/version"
-
-module RtFreshTv
-  # Your code goes here...
-end
+require_relative "rt_fresh_tv/version"
+require_relative './rt_fresh_tv/cli'
