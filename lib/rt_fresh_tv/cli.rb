@@ -5,11 +5,12 @@ class RtFreshTv::CLI
 		welcome
 		list_shows
 		menu
-		goodbye
 	end
 
 	def welcome
-		puts "Welcome to Rotten Tomatoes' Fresh TV"
+		puts "****************************************"
+		puts "* Welcome to Rotten Tomatoes' Fresh TV *"
+		puts "****************************************"
 		puts "Below, you will find current television shows that have been 'Certified Fresh' on Rotten Tomatoes."
 	end
 
@@ -30,6 +31,8 @@ class RtFreshTv::CLI
 				puts "More information about show 1"
 			elsif input == "list"
 				list_shows
+			elsif input == "exit"
+				goodbye
 			else
 				puts "I did not understand your input. Please choose a show or type 'list' to see the shows"
 			end
@@ -39,5 +42,5 @@ class RtFreshTv::CLI
 	def goodbye
 		puts "Thank you for using Rotten Tomatoes' Fresh TV!"
 	end
-	
+
 end
