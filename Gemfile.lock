@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    rt_fresh_tv (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.4.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.16)
+  rake (~> 10.0)
+  rt_fresh_tv!
+
+BUNDLED WITH
+   1.16.2
