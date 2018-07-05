@@ -1,6 +1,6 @@
 class RtFreshTv::Show
 
-	attr_accessor :name, :URL, :rating, :synopsis, :critic_consensus
+	attr_accessor :name, :url, :rating, :synopsis, :critic_consensus
 
 	@@all = []
 
@@ -11,5 +11,5 @@ class RtFreshTv::Show
 	def self.all 
 		@@all
 	end
-	
+
 end
