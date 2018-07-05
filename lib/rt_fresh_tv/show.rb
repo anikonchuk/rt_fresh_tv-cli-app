@@ -1,6 +1,6 @@
 class RtFreshTv::Show
 
-	attr_accessor :name, :url, :rating, :synopsis, :critic_consensus
+	attr_accessor :title, :url, :rating, :synopsis, :critic_consensus
 
 	@@all = []
 

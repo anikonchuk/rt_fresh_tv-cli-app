@@ -3,6 +3,7 @@ class RtFreshTv::CLI
 
 	def call
 		welcome
+		RtFreshTv::Scraper.new.scrape_website
 		list_shows
 		menu
 	end
