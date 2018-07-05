@@ -26,7 +26,7 @@ class RtFreshTv::CLI
 	def menu
 		input = nil
 		while input != "exit"
-			puts "Please type the number of the show you would like more information about. You can also type 'list' for the list of shows or 'exit'."
+			puts "Please type the number of the show about which you would like more information. You can also type 'list' for the list of shows or 'exit'."
 			input = gets.strip.downcase
 			if input.to_i > 0 && input.to_i <= @shows.size
 				puts "Synopsis: #{@shows[input.to_i - 1].synopsis} \n\n"
