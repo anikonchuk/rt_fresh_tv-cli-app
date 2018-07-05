@@ -14,7 +14,6 @@ class RtFreshTv::CLI
 		puts "****************************************"
 		puts "Below, you will find current television shows that have been 'Certified Fresh' on Rotten Tomatoes, along with their Tomato-Meter scores."
 	end
-
 	
 	def list_shows
 		@shows = RtFreshTv::Show.all
