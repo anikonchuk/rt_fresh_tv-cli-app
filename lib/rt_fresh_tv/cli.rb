@@ -34,7 +34,7 @@ class RtFreshTv::CLI
 			input = gets.strip.downcase
 			if input.to_i > 0 && input.to_i <= @shows.size
 				puts "Synopsis: #{@shows[input.to_i - 1].synopsis}"
-				puts "#{@shows[input.to_i - 1].critic_consensus}"
+				puts "Critic Consensus: #{@shows[input.to_i - 1].critic_consensus}"
 				puts "For more reviews and information, visit #{@shows[input.to_i - 1].url}"
 			elsif input == "list"
 				list_shows
