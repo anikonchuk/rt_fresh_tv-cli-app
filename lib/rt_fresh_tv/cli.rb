@@ -2,10 +2,16 @@
 class RtFreshTv::CLI
 
 	def call
-		puts "Welcome to Rotten Tomatoes' Fresh TV!"
+		welcome
 		list_shows
 	end
 
+	def welcome
+		puts "Welcome to Rotten Tomatoes' Fresh TV"
+		puts "Below, you will find current television shows that have been 'Certified Fresh' on Rotten Tomatoes."
+	end
+	
+	
 	def list_shows
 		puts "1. Vida: Season 1. 100%"
 		puts "2. GLOW: Season 2. 98%"
