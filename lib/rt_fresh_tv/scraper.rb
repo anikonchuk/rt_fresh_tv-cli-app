@@ -10,7 +10,8 @@ class RtFreshTv::Scraper
 			show.rating = div.css("span.tMeterScore").text
 			show.critic_consensus = div.css("span.consensusText").text
 			show.url = "https://www.rottentomatoes.com" + div.css("a#tvPosterLink").attr("href").text
-			binding.pry
+			show_page = Nokogiri::HTML(open(show.url))
+			show.synopsis = show_page.css("div#movieSynopsis").text.strip
 		end
 
 	end
