@@ -1,8 +1,6 @@
 # RtFreshTv
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rt_fresh_tv`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to RtFreshTv. This CLI gem gives information about Rotten Tomatoes' Certified Fresh television shows. When you start the application, you will see a list of television shows that are "Certified Fresh" on Rotten Tomatoes, along with their TomatoMeter score. You can then choose an individual show from the list, and the CLI will display a synopsis of the show, the critical consensus about the show, and a link for more information about the show.
 
 ## Installation
 
