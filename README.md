@@ -1,6 +1,6 @@
-# RtFreshTv
+# Rotten Tomatoes' Fresh TV
 
-Welcome to RtFreshTv. This CLI gem gives information about Rotten Tomatoes' Certified Fresh television shows. When you start the application, you will see a list of television shows that are "Certified Fresh" on Rotten Tomatoes, along with their TomatoMeter score. You can then choose an individual show from the list, and the CLI will display a synopsis of the show, the critical consensus about the show, and a link for more information about the show.
+Welcome to Rotten Tomatoes' Fresh TV. This CLI gem gives information about Rotten Tomatoes' Certified Fresh television shows. When you start the application, you will see a list of television shows that are "Certified Fresh" on Rotten Tomatoes, along with their TomatoMeter score. You can then choose an individual show from the list, and the CLI will display a synopsis of the show, the critical consensus about the show, and a link for more information about the show.
 
 ## Installation
 

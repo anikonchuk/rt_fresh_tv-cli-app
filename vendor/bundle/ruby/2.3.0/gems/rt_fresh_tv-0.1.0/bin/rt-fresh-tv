@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "rt_fresh_tv"
+
+RtFreshTv::CLI.new.call
