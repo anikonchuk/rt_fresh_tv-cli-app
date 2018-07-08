@@ -4,19 +4,15 @@ Welcome to Rotten Tomatoes' Fresh TV. This CLI gem gives information about Rotte
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Download this repository. Run the following command from the root directory of this repository to install gem dependencies:
 
 ```ruby
-gem 'rt_fresh_tv'
+bundle install
 ```
 
-And then execute:
+And then execute the rt-fresh-tv bin file from the root directory:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install rt_fresh_tv
+    $ ./bin/rt-fresh-tv
 
 ## Usage
 
