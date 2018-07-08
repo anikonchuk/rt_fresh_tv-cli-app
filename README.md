@@ -10,7 +10,7 @@ Download this repository. Run the following command from the root directory of t
 bundle install
 ```
 
-And then execute the rt-fresh-tv bin file from the root directory:
+And then execute the rt-fresh-tv bin file:
 
     $ ./bin/rt-fresh-tv
 
