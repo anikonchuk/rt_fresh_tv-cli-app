@@ -34,7 +34,7 @@ class RtFreshTv::CLI
 			elsif input == "exit"
 				goodbye
 			else
-				puts "I did not understand your input. Please choose a show or type 'list' to see the shows"
+				input_error
 			end
 		end
 	end
@@ -45,6 +45,9 @@ class RtFreshTv::CLI
 		puts "For more reviews and information, visit #{@shows[input.to_i - 1].url} \n\n"
 	end
 
+	def input_error
+		puts "I did not understand your input. Please choose a show or type 'list' to see the shows"
+	end
 
 	def goodbye
 		puts "Thank you for using Rotten Tomatoes' Fresh TV!"
