@@ -40,9 +40,11 @@ class RtFreshTv::CLI
 	end
 
 	def show_info(input)
-		puts "Synopsis: #{@shows[input.to_i - 1].synopsis} \n\n"
-		puts "Critic Consensus: #{@shows[input.to_i - 1].critic_consensus} \n\n"
-		puts "For more reviews and information, visit #{@shows[input.to_i - 1].url} \n\n"
+		show = @shows[input.to_i - 1]
+		RtFreshTv::Scraper.new.scrape_show_page(show)
+		puts "Synopsis: #{show.synopsis} \n\n"
+		puts "Critic Consensus: #{show.critic_consensus} \n\n"
+		puts "For more reviews and information, visit #{show.url} \n\n"
 	end
 
 	def input_error
