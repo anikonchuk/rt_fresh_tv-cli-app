@@ -13,11 +13,8 @@ class RtFreshTv::Scraper
 	end
 
 	def self.scrape_show_page(show)
-#		puts "**********Scrapiing************"
-		if !show.synopsis 
-			show_page = Nokogiri::HTML(open(show.url))
-			show.synopsis = show_page.css("div#movieSynopsis").text.strip
-		end
+		show_page = Nokogiri::HTML(open(show.url))
+		show.synopsis = show_page.css("div#movieSynopsis").text.strip
 	end
 	
 end

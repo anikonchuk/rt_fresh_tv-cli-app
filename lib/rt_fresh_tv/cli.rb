@@ -41,7 +41,7 @@ class RtFreshTv::CLI
 
 	def show_info(input)
 		show = @shows[input.to_i - 1]
-		RtFreshTv::Scraper.scrape_show_page(show)
+		RtFreshTv::Scraper.scrape_show_page(show) if !show.synopsis
 		puts "Synopsis: #{show.synopsis} \n\n"
 		puts "Critic Consensus: #{show.critic_consensus} \n\n"
 		puts "For more reviews and information, visit #{show.url} \n\n"
