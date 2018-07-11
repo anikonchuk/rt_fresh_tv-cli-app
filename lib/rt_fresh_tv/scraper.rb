@@ -1,6 +1,6 @@
 class RtFreshTv::Scraper
 
-	def scrape_website
+	def self.scrape_website
 		doc = Nokogiri::HTML(open("https://www.rottentomatoes.com/top-tv/"))
 		shows = doc.css("div.col.col-center.col-full-xs div.panel-body.content_body").first.css("div.media")
 		shows.each do |div|
@@ -12,9 +12,12 @@ class RtFreshTv::Scraper
 		end
 	end
 
-	def scrape_show_page(show)
-		show_page = Nokogiri::HTML(open(show.url))
-		show.synopsis = show_page.css("div#movieSynopsis").text.strip
+	def self.scrape_show_page(show)
+#		puts "**********Scrapiing************"
+		if !show.synopsis 
+			show_page = Nokogiri::HTML(open(show.url))
+			show.synopsis = show_page.css("div#movieSynopsis").text.strip
+		end
 	end
 	
 end
